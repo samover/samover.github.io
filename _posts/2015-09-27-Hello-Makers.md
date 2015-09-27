@@ -5,7 +5,7 @@ title: My First Post!
 
 This is my first post. I will start by inserting some markdown elements:
 #### A Picture
-![Some Picture](images/stept1.gif)
+![Some Picture](images/matera.jpg)
 (http://github.com/samover)
 
 #### A Youtube Clip
