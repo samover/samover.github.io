@@ -1,10 +1,26 @@
 ---
 layout: post
-title: You're up and running!
+title: My First Post!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+This is my first post. I will start by inserting some markdown elements:
+#### A Picture
+![Some Picture](/images/stept1.gif)
+(http://github.com/samover)
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+#### A Youtube Clip
+[![INTRO TO MAKERS](http://img.youtube.com/vi/-g3T8fbeR9g/0.jpg)](http://www.youtube.com/watch?v=-g3T8fbeR9g)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+#### And just some code: a recursive factorial method
+```ruby
+def factorial(n)
+  if n < 0
+    return "Error. You can't factor negative numbers"
+  elsif n <= 1
+    1
+  else
+    n * factorial(n - 1)
+  end
+```
+
+

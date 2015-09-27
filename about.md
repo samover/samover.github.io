@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Hi There!
 permalink: /about/
 ---
 
-Some information about you!
+Here I will write something about myself.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Well, I don't know what else you would like to know.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email](mailto:samuel dot overloop at google dot com)
