@@ -1,6 +1,6 @@
 ---
 layout: post
-title: solid_code.include? single_responsibility_principle
+title: solid_code.include? srp
 ---
 #### What is SRP?
 The Single Responsibility Principle (SRP) is a way of making your code more
