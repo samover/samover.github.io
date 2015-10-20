@@ -3,6 +3,7 @@ layout: post
 title: Named attributes in Ruby
 ---
 The 'normal' way of passing arguments to a method or class in Ruby can be illustrated as follows:
+
 ```ruby
 def hello(message, receiver)
   puts "Saying #{message} to #{receiver}"
@@ -32,7 +33,7 @@ But what happens when I want to pass different weather? The only way of doing th
 airport = Airport.new(Airport::DEFAULT, :stormy)
 # <Airport:0x007fc3190a7c40 @capacity=20, @weather="rainy">
 ```
-And that is a needless passing of a value that is defaulted anyway, and we coders are lazy, right? Since Ruby 2.0 it is possible to use named arguments, which help a coder to be even more lazy. Have a look at this:
+And that is a needless passing of a value that is defaulted any way, and we coders are lazy, right? Since Ruby 2.0 it is possible to use named arguments, which help a coder to be even more lazy. Have a look at this:
 
 ```ruby
 class Airport
