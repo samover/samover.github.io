@@ -32,6 +32,7 @@ What is wrong? Look kinda neat, no? Well, the class has two responsibilities:
 2. It decides whether the weather is stormy and raises an error if that is the case.
 
 According to SRP, we need to pull these two responsibilities into two separate classes.
+
 ```ruby
 class Weather
   def self.stormy?
