@@ -21,16 +21,19 @@ class Airport
 end
 ```
 Now, when I initialize a new Airport, I can write :
+
 ```ruby
 airport = Airport.new 
 # <Airport:0x007fc3190a7c40 @capacity=20, @weather="stormy">
 ```
 But what happens when I want to pass different weather? The only way of doing that would be:
+
 ```ruby
 airport = Airport.new(Airport::DEFAULT, :stormy)
 # <Airport:0x007fc3190a7c40 @capacity=20, @weather="rainy">
 ```
 And that is a needless passing of a value that is defaulted anyway, and we coders are lazy, right? Since Ruby 2.0 it is possible to use named arguments, which help a coder to be even more lazy. Have a look at this:
+
 ```ruby
 class Airport
   DEFAULT = 20
@@ -44,6 +47,7 @@ airport = Airport.new(weather: :rainy)
 # <Airport:0x007fc3190a7c40 @capacity=20, @weather="rainy">
  ```
 Using keyword arguments (or named attributes), the order in which arguments are passed doesn't matter:
+
 ```ruby
 airport = Airport.new(weather: :sunny, capacity: 50)
 # <Airport:0x007fc319047b10 @capacity=50, @weather=:sunny>
