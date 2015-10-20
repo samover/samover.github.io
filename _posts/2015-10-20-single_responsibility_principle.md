@@ -5,57 +5,41 @@ title: solid_code.include? srp
 #### What is SRP?
 The Single Responsibility Principle (SRP) is a way of making your code more
 elegant and flexible. It is part of the [SOLID design principles](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) in computer
-programming. The principle states that every class should do only one thing, i.e. have only one job.
+programming which stand for:
+* S – Single-responsiblity principle
+* O – Open-closed principle
+* L – Liskov substitution principle
+* I – Interface segregation principle
+* D – Dependency Inversion Principle
 
-#### Code Example with too many responsibilities
+The Single-responsibility principle states that every class should do only one thing, i.e. have only one job. The following code goes against this principle: 
 
 ``` ruby
-class Airport
-  attr_reader :planes
-
-  def intialize
-    @planes = []
-  end
-
-  def land(plane)
-    fail if stormy?
-    planes << plane
-  end
-
-  def stormy?
-    conditions = [:stormy, :sunny, :rainy, :cloudy].sample
-    conditions == :stormy
+class Plane
+  def land
+    raise 'Too stormy to land' if rand > .75
+    @landed = true
   end
 end
 ```
-In this example, the Airport class has two responsibilities:
-1. Predicting the weather
-2. Land a plane
+What is wrong? Look kinda neat, no? Well, the class has two responsibilities:
+1. It lands a plane by setting @landed to true
+2. It decides whether the weather is stormy and raises an error if that is the case.
 
-According to SRP, we need to pull them into two separate classes.
-
-#### Refactored code example
+According to SRP, we need to pull these two responsibilities into two separate classes.
 ``` ruby
 class Weather
-  OUTLOOK = [:stormy, :sunny, :rainy, :cloudy]
   def self.stormy?
-    OUTLOOK.sample == :stormy
+    rand > .75
   end    
 end
 
-class Airport
-  attr_reader :planes, :weather
-
-  def intialize(weather: Weather)
-    @planes = []
-    @weather = weather
-  end
-
-  def land(plane)
-    fail if weather.stormy?
-    planes << plane
+class Plane
+  
+  def land
+    raise 'Too stormy to land' if Weather.stormy?
+    @landed = true
   end
 end
 ```
-
-As you can see, Weather predicts the weather, and Airport lands a plane. Each class has a clear responsibility. This makes for elegant and readable code, which is also flexible. If you need to change how the weather is predicted, you only need to change Weather, without touching Airport.
+Adhering to the single responsibility principle keeps your code lean, readable and flexible. When the client changes one aspect of her story, only one class should be changed. With a growing codebase, this is a lifesaver and your colleagues will love you for it. 
