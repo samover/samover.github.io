@@ -6,11 +6,17 @@ title: solid_code.include? srp
 The Single Responsibility Principle (SRP) is a way of making your code more
 elegant and flexible. It is part of the [SOLID design principles](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) in computer
 programming which stand for:
+
 * S – Single-responsiblity principle
+
 * O – Open-closed principle
+
 * L – Liskov substitution principle
+*
 * I – Interface segregation principle
+
 * D – Dependency Inversion Principle
+
 
 The Single-responsibility principle states that every class should do only one thing, i.e. have only one job. The following code goes against this principle: 
 
