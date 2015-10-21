@@ -17,7 +17,7 @@ attr_accessor :name
 end
 ```
 
-This is bad practice because any simple Joe can change the name of my bank account. So how do I change my code, so only authorized people can change the name of my account?
+This is bad practice, because any simple Joe can change the name of my bank account. So how do I change my code, so only authorized people can change the name of my account?
 
 ```ruby
 class BankAccount
@@ -33,3 +33,5 @@ attr_reader :name
   end
 end
 ```
+
+In this way, I restrict the changing of the name of my bank account to admin users. I succesfully encapsulated my data and only opened it up as far as it is needed for my program. 
