@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Named attributes in Ruby
+title: Keyword Arguments in Ruby
 ---
 The 'normal' way of passing arguments to a method or class in Ruby can be illustrated as follows:
 
@@ -13,7 +13,7 @@ hello('greetings', 'earthling')
 # => greetings, earthling!
 ```
 
-This works fine in most cases, but have a look at this:
+Positional agruments work fine in most cases, but have a look at this:
 
 ```ruby
 class Airport
