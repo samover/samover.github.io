@@ -2,7 +2,7 @@
 layout: post
 title: Single-Responsibility Principle
 ---
-![Too many responsibilities](../images/srp.gif)
+![Too many responsibilities](../images/s_rp.gif)
 
 The Single-responsibility principle (SRP) is a way of making your code more elegant and flexible. It is part of the [SOLID design principles](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) in computer
 programming which stand for:
