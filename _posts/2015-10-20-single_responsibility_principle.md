@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Single Responsibility Principle
+title: Single-Responsibility Principle
 ---
-The Single Responsibility Principle (SRP) is a way of making your code more
-elegant and flexible. It is part of the [SOLID design principles](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) in computer
+The Single-responsibility principle (SRP) is a way of making your code more elegant and flexible. It is part of the [SOLID design principles](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) in computer
 programming which stand for:
 
   S – Single-responsiblity principle
@@ -16,7 +15,6 @@ programming which stand for:
 
   D – Dependency Inversion Principle
 
-
 The Single-responsibility principle states that every class should do only one thing, i.e. have only one job. The following code goes against this principle: 
 
 ```ruby
@@ -27,11 +25,13 @@ class Plane
   end
 end
 ```
-What is wrong? Look kinda neat, no? Well, the class has two responsibilities:
+What is wrong? Looks kinda neat, no? Well, the class has two responsibilities:
+
 1. It lands a plane by setting @landed to true
+
 2. It decides whether the weather is stormy and raises an error if that is the case.
 
-According to SRP, we need to pull these two responsibilities into two separate classes.
+To correct this, we need to pull the two responsibilities into separate classes.
 
 ```ruby
 class Weather
@@ -48,4 +48,4 @@ class Plane
 end
 ```
 
-Adhering to the single responsibility principle keeps your code lean, readable and flexible. When the client changes one aspect of her story, only one class should be changed. With a growing codebase, this is a lifesaver and your colleagues will love you for it. 
+Adhering to the single-responsibility principle keeps your code lean, readable and flexible. When the client changes one aspect of her story, only one class should be changed. With a growing codebase, this is a lifesaver and your colleagues will love you for it. 
