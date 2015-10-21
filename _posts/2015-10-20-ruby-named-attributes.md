@@ -6,8 +6,11 @@ The 'normal' way of passing arguments to a method or class in Ruby can be illust
 
 ```ruby
 def hello(message, receiver)
-  puts "Saying #{message} to #{receiver}"
+  "{message}, #{receiver}!"
 end
+
+hello('greetings', 'earthling')
+# => greetings, earthling!
 ```
 
 This works fine in most cases, but have a look at this:
