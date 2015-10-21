@@ -2,6 +2,8 @@
 layout: post
 title: Keyword Arguments in Ruby
 ---
+![sheldon](../images/sheldon.jpg)
+
 The 'normal' way of passing arguments to a method or class in Ruby can be illustrated as follows:
 
 ```ruby
@@ -27,7 +29,7 @@ end
 Now, when I initialize a new Airport, I can write :
 
 ```ruby
-airport = Airport.new 
+airport = Airport.new
 # => <Airport:0x007fc3190a7c40 @capacity=20, @weather="stormy">
 ```
 But what happens when I want to pass different weather? The only way of doing that would be:
