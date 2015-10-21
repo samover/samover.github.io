@@ -13,7 +13,7 @@ hello('greetings', 'earthling')
 # => greetings, earthling!
 ```
 
-Positional agruments work fine in most cases, but have a look at this:
+Positional arguments work fine in most cases, but have a look at this:
 
 ```ruby
 class Airport
