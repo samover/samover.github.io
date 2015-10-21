@@ -29,7 +29,7 @@ end
 ```
 What is wrong? Looks kinda neat, no? Well, the class has two responsibilities:
 
-1. It lands a plane by setting @landed to true
+1. It lands a plane by setting `@landed` to `true`
 
 2. It decides whether the weather is stormy and raises an error if that is the case.
 
