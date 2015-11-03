@@ -3,6 +3,8 @@ layout: post
 title: Persistent storage: databases 
 ---
 
+![Storage?](http://gallery.gosi.at/d/16959-1/funny-pictures-chipmunk-has-storage.jpg)
+
 Persistent data storage can simply be defined as the storage of data "long-term". That is to say, it outlives the process or processes that created it.
 
 The most common type of database is relational, one that is constructed from tables where each column within the table represents a single piece of data and each row represents a unique entity. These databases often use Structured Query Language (SQL) to build and query the data they contain. This approach differs to persistent storage using a filesystem as it defines the relationships between data instances rather than just containing them.
