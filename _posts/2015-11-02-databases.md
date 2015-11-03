@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistent storage: databases 
+title: Persistent storage - databases 
 ---
 
 ![Storage?](http://gallery.gosi.at/d/16959-1/funny-pictures-chipmunk-has-storage.jpg)
