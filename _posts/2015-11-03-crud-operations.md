@@ -17,10 +17,15 @@ UPDATE => UPDATE
 
 DELETE => DELETE
 
-SQL stands for 'Structured Query Language'. This means that it is a tool with language rules that allow a user to perform a query or read command on a database. It further allows to create a table in a database, and insert, update and delete data from a table. Here are some examples on how to perform SQL operations on a database: 
+SQL stands for 'Structured Query Language'. This means that it is a tool with language rules that allow a user to perform a query or read command on a database. First a table has to be created in a database: 
 
 ```
 CREATE TABLE students ( id SERIAL PRIMARY KEY, name (VARCHAR(80) );
+```
+
+Then SQL allows one to insert, update, select and delete data from a table. Here are some examples on how to perform SQL operations on a database: 
+
+```
 
 INSERT INTO students (name) VALUES ('LUKE SKYWALKER');
 
