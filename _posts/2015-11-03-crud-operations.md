@@ -27,5 +27,7 @@ INSERT INTO students (name) VALUES ('LUKE SKYWALKER');
 UPDATE students SET NAME = 'DARTH VADER' WHERE name = 'LUKE SKYWALKER';
 
 DELETE FROM students WHERE name = 'DARTH VADER';
+
+SELECT * FROM students
 ```
 
