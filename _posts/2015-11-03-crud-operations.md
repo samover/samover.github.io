@@ -11,10 +11,15 @@ The four CRUD functions also form the backbone of persistent storage solutions. 
 
 
 CRUD | SQL 
+
 -----| ---
+
 CREATE | INSERT
+
 READ  | SELECT
+
 UPDATE | UPDATE
+
 DELETE | DELETE
 
 
